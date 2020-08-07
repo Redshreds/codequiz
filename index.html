@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css" type="text/css">
+    <title>CodeQuiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row justify-content-md-center">
+                <div class="col-10">
+                    <!--Link to the highscore page-->
+                    <a href="leaderboard.html" id="highscoreNav">View High Scores</a>
+                </div>
+                <!--Timer keeping track of progress during the game -->
+                <div class="col-2">
+                    <p>Time: <span id="timer">60</span></p>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-content">
+            <!--init-page section-->
+            <div class="row justify-content-md-center">
+                <div class="col-10 ">
+                    <div class="init-page">
+                        <h1 id="h1"></h1>
+                        <!--Coding Quiz Challenge-->
+                        <p id="p"></p>
+                        <!--Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds!-->
+                        <!--<a class="button" element onclick="countDown" href="questions.html"></a>-->
+                    </div>
+                </div>
+            </div>
+
+            <!--ask-question section-->
+
+            <div class="row justify-content-md-center">
+                <div class="col-10">
+                    <div class="ask-question">
+                        <h2 id="title"></h2>
+                        <!--Posed questions appear here-->
+                        <div class="possible-answers btn-group-vertical"></div>
+                        <!-- Call out the elements of an array within an array-->
+                        <span id="prompt"></span><!-- Where the wrong or right prompt will appear -->
+                    </div>
+                </div>
+            </div>
+
+            <!--changeScore-page section-->
+            <div class="row justify-content-md-center">
+                <div class="col-10">
+                    <div class="changeScore-page">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div class="container">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/questions.js"></script>
+</body>
+
+</html>
