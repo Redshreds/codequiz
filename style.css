@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ul {
     list-style-type: none;
 }
@@ -67,3 +68,8 @@ input::after {
 .header {
     justify-content: space-between;
 }
+=======
+.answers {
+    display:none
+};
+>>>>>>> 28cb91486724c0b85e0df4d5d86c9c2632fa1688
